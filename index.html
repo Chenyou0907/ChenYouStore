@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chen._.9797</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="snow.css">
+</head>
+<body>
+    <div class="container">
+        <div class="photo-space">
+            <img src="頭貼.png" alt="照片位置">
+        </div>
+        <div class="text">
+            Chen._.9797
+        </div>
+        <div class="icon">
+            <a href="https://www.instagram.com/chen._.9797?igsh=MXFlMWN3bHhpbjl1dA%3D%3D&utm_source=qr" target="_blank">
+                <img src="ig圖標.png" alt="IG圖標" class="ig-icon">
+            </a>
+            <a href="https://www.facebook.com/share/14WzTLGbfU/?mibextid=wwXIfr" target="_blank">
+                <img src="fb圖標.png" alt="FB圖標" class="fb-icon">
+            </a>
+        </div>
+        <div class="discord-server">
+            <a href="https://discord.gg/chenyou970907" target="_blank">
+                Discord 伺服器
+            </a>
+        </div>
+        <div class="discord-server">
+            <a href="https://www.tiktok.com/@chen_o9o7?_t=ZS-8txwZYp6oWD&_r=1" target="_blank">
+                TikTok
+            </a>
+        </div>
+        <div class="discord-server">
+            <a href="https://t.me/Justin9797" target="_blank">
+                Telegram
+            </a>
+        </div>
+        <div class="discord-server">
+            <a href="Chen You Store.html" target="_blank">
+                我的商店
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // 雪花生成函數
+        function createSnowflake() {
+            const snowflake = document.createElement('div');
+            snowflake.className = 'snowflake';
+            snowflake.innerHTML = '❄'; // 雪花符號
+            snowflake.style.left = Math.random() * 100 + 'vw'; // 隨機水平位置
+            snowflake.style.fontSize = Math.random() * 1.5 + 0.5 + 'em'; // 隨機大小
+            document.body.appendChild(snowflake);
+
+            // 設置雪花下落時間
+            const fallDuration = Math.random() * 3 + 2; // 隨機下落時間
+            snowflake.style.animationDuration = fallDuration + 's';
+
+            // 移除雪花
+            snowflake.addEventListener('animationend', () => {
+                snowflake.remove();
+            });
+        }
+
+        // 每隔一段時間生成雪花
+        setInterval(createSnowflake, 300); // 每 300 毫秒生成一個雪花
+
+        // 畫面漸變效果
+        window.onload = function() {
+            document.body.classList.add('loaded'); // 加載完成後添加類別
+        };
+
+        // 滾動事件來顯示商品
+        window.addEventListener('scroll', function() {
+            const productList = document.getElementById('product-list');
+            const windowHeight = window.innerHeight;
+            const productListTop = productList.getBoundingClientRect().top;
+
+            // 當商品列表進入視窗時顯示
+            if (productListTop < windowHeight) {
+                productList.classList.add('visible');
+            }
+        });
+    </script>
+</body>
+</html> 
