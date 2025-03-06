@@ -402,3 +402,61 @@ tr:nth-child(even) {
     text-align: center; /* 文字置中 */
     color: rgb(0, 60, 255); /* 文字顏色 */
 }
+
+/* 對於小屏幕（如手機） */
+@media (max-width: 600px) {
+    .navbar {
+        padding: 10px; /* 減少導航欄的內邊距 */
+    }
+
+    .navbar a {
+        font-size: 1.2em; /* 減小字體大小 */
+    }
+
+    .content {
+        padding: 40px 10px; /* 減少內容的內邊距 */
+    }
+
+    .link {
+        width: 90%; /* 使連結寬度適應小屏幕 */
+        font-size: 1.2em; /* 減小字體大小 */
+    }
+
+    .slider {
+        width: 90%; /* 調整圖片滑塊的寬度 */
+        height: auto; /* 自動調整高度 */
+    }
+
+    .features {
+        font-size: 1em; /* 減小功能文字的字體大小 */
+    }
+}
+
+/* 對於中等屏幕（如平板） */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .navbar {
+        padding: 15px; /* 調整導航欄的內邊距 */
+    }
+
+    .navbar a {
+        font-size: 1.4em; /* 調整字體大小 */
+    }
+
+    .content {
+        padding: 60px 20px; /* 調整內容的內邊距 */
+    }
+
+    .link {
+        width: 80%; /* 使連結寬度適應中等屏幕 */
+        font-size: 1.4em; /* 調整字體大小 */
+    }
+
+    .slider {
+        width: 80%; /* 調整圖片滑塊的寬度 */
+        height: auto; /* 自動調整高度 */
+    }
+
+    .features {
+        font-size: 1.2em; /* 調整功能文字的字體大小 */
+    }
+}
