@@ -1,13 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #001f3f;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    overflow: auto;
-    font-family: Arial, sans-serif;
-    color: #ffffff;
+    background-color: #121212; /* 暗色背景 */
+    color: #ffffff; /* 白色文字 */
+    font-family: Arial, sans-serif; /* 字體 */
 }
 
 .container {
@@ -88,7 +84,6 @@ body {
     text-decoration: none;
     margin: 0 15px;
     font-size: 1.5em;
-    position: relative;
 }
 
 .navbar a:hover {
@@ -123,11 +118,13 @@ body {
 }
 
 .content {
-    padding: 80px 20px;
+    width: 1024px; /* 固定寬度 */
+    margin: 0 auto; /* 置中 */
+    padding: 80px 20px; /* 統一的內邊距 */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    flex-grow: 1;
+    align-items: center; /* 置中內容 */
+    text-align: center; /* 文字置中 */
 }
 
 .logo {
@@ -222,51 +219,6 @@ h1 {
     100% {
         transform: translateY(100vh); /* 結束位置 */
     }
-} 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #121212; /* 暗色背景 */
-    color: #ffffff; /* 白色文字 */
-    font-family: Arial, sans-serif; /* 字體 */
-}
-
-.content {
-    padding: 80px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* 置中內容 */
-}
-
-.price-table {
-    margin-top: 20px; /* 上邊距 */
-}
-
-table {
-    width: 80%; /* 表格寬度 */
-    border-collapse: collapse; /* 合併邊框 */
-    margin: 0 auto; /* 置中表格 */
-}
-
-th, td {
-    border: 1px solid #ffffff; /* 表格邊框 */
-    padding: 10px; /* 內邊距 */
-    text-align: center; /* 文字置中 */
-}
-
-th {
-    background-color: #1e90ff; /* 標題背景顏色 */
-}
-
-tr:nth-child(even) {
-    background-color: #333; /* 偶數行背景顏色 */
-}
-.content {
-    padding: 80px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* 置中內容 */
-    text-align: center; /* 文字置中 */
 }
 
 .price-table {
@@ -331,12 +283,10 @@ tr:nth-child(even) {
 }
 
 .slider {
-    position: absolute; /* 絕對定位 */
-    top: 40%; /* 上移，調整為 40% */
-    left: 50%; /* 水平置中 */
-    transform: translate(-50%, -50%); /* 調整位置 */
-    width: 339px; /* 設定寬度 (1018px / 3) */
-    height: 339px; /* 設定高度 (1018px / 3) */
+    position: relative; /* 使用相對定位 */
+    width: 339px; /* 固定寬度 */
+    height: 339px; /* 固定高度 */
+    margin: 20px auto; /* 置中 */
     overflow: hidden; /* 隱藏溢出部分 */
 }
 
@@ -357,8 +307,6 @@ tr:nth-child(even) {
     margin-top: 20px; /* 上邊距 */
     color: white; /* 文字顏色 */
     font-size: 1.2em; /* 字體大小 */
-    position: relative; /* 使其相對於父元素定位 */
-    top: 10px; /* 向下移動一點 */
 }
 
 .ios證書 {
